@@ -3,5 +3,28 @@
 
 void Engine::run()
 {
-    std::cout << "Engine Running..." << std::endl;
+    while (running)
+    {
+        processInput();
+        update();
+        render();
+
+        running = false;
+    }
+}
+
+void Engine::processInput()
+{
+    std::cout << "Processing Input..." << std::endl; //Place holder
+
+}
+
+void Engine::update()
+{
+    std::cout << "Updating Game..." << std::endl; //Place holder
+}
+
+void Engine::render()
+{
+    std::cout << "Rendering Frame..." << std::endl; //Place holder
 }

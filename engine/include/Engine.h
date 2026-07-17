@@ -4,4 +4,11 @@ class Engine
 {
     public:
         void run();
+    
+    private:
+        bool running = true;
+        
+        void processInput();
+        void update();
+        void render();
 };
