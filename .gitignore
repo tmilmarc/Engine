@@ -1,0 +1,14 @@
+# Ignore build output
+build/
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Visual Studio files
+.vs/
+
+# Ignore CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
