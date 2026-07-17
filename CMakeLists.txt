@@ -5,12 +5,20 @@ project(Engine)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
-add_executable(Engine
-    game/main.cpp
+add_library(Engine
     engine/src/Engine.cpp
 )
 
-target_include_directories(Engine PRIVATE
+
+add_executable(Game
+    game/main.cpp
+)
+
+target_link_libraries(Game
+    Engine    
+)
+
+
+target_include_directories(Engine PUBLIC
     engine/include
 )
